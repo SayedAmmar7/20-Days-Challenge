@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="display-view">
+        <h1>User Profile</h1>
+        <img src="img.png" alt="User Profile">
+        <span>Name :</span><b id="name">User Name</b>
+        <hr>
+
+        <span>Email :</span><b id="email">User@gmail.com</b>
+        <hr>
+
+        <span>Interest :</span><b id="interest" >Anonymous</b>
+        <hr>
+
+        <button onclick="handleEditProfile()">Edit Profile</button>
+    </div>
+    <div id="edit-view">
+        <h1>User Profile</h1>
+        <img src="img.png" alt="User Profile">
+        <span>Name :</span><input id="input-name" type="text" placeholder="User Name">
+        <hr>
+
+        <span>Email :</span><input id="input-email" type="text" placeholder="User@gmail.com">
+        <hr>
+
+        <span>Interest :</span><input id="input-interest" type="text" placeholder="Anonymous">
+        <hr>
+
+        <button onclick="handleUpdateProfile()">Update Profile</button>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
